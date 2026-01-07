@@ -1,5 +1,3 @@
-[client.py](https://github.com/user-attachments/files/24482673/client.py)
-
 # Python TCP Chat Room
 
 ## Overview
@@ -39,6 +37,15 @@ This project is intended as an educational example of how TCP sockets, threading
 - Displays messages in real time
 
 ---
+
+## 📦 Usage
+
+```bash
+python3 server.py
+python3 client.py
+```
+
+## Example
 
 
 
