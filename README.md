@@ -1,3 +1,5 @@
+[client.py](https://github.com/user-attachments/files/24482673/client.py)
+
 # Python TCP Chat Room
 
 ## Overview
@@ -16,9 +18,6 @@ This project is intended as an educational example of how TCP sockets, threading
 - Nickname-based user identification
 - No external dependencies
 
----
-
-## Project Structure
 ---
 
 ## How It Works
@@ -41,16 +40,7 @@ This project is intended as an educational example of how TCP sockets, threading
 
 ---
 
-## Requirements
 
-- Python 3.8 or newer
-- Python standard library only
 
----
 
-## Usage
 
-### Start the Server
-
-```bash
-python server.py
