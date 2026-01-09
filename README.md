@@ -1,53 +1,34 @@
-# Python TCP Chat Room
+# Secure TCP Chat Room
 
 ## Overview
 
-A lightweight TCP chat room written in Python, demonstrating socket programming and basic client–server communication using the Python standard library.
-
-This project is intended as an educational example of how TCP sockets, threading, and message broadcasting work in a simple client–server architecture.
-
----
-
-## Features
-
-- TCP client–server architecture
-- Multiple concurrent clients using threading
-- Real-time message broadcasting
-- Nickname-based user identification
-- No external dependencies
-
----
-
-## How It Works
-
-### Server
-
-- Listens on a specified host and port
-- Accepts incoming client connections
-- Maintains a list of connected clients
-- Spawns a thread per client to handle messages
-- Broadcasts messages to all connected clients
-
-### Client
-
-- Connects to the server using TCP
-- Sends a nickname during the initial handshake
-- Uses one thread for sending messages
-- Uses another thread for receiving messages
-- Displays messages in real time
-
----
-
-## 📦 Usage
-
-```bash
-python3 server.py
-python3 client.py
-```
-
-## Example
+The Secure TCP Chat Room is a Python-based client-server application that enables encrypted and confidential communication between multiple users over TCP. The project demonstrates practical knowledge of networking fundamentals, secure communication concepts, and socket programming.
 
 
+### Features
+- Encrypted messaging to ensure confidentiality
+- TCP-based client-server architecture
+- Support for multiple concurrent users
+- Reliable message delivery using TCP sockets
+- Clear separation of client and server logic
 
+### Technologies Used
+- Python
+- TCP Sockets
+- Networking Protocols
+- Encryption Techniques (e.g., symmetric or asymmetric encryption, depending on implementation)
 
+### Architecture
+
+The application follows a traditional TCP client-server model:
+- The server listens for incoming client connections and manages message routing.
+- Each client establishes a TCP connection to the server and securely sends and receives messages.
+- Encryption is applied before transmission and decrypted upon receipt to protect data in transit.
+
+### Learning Outcomes
+
+This project demonstrates:
+- Strong understanding of TCP/IP networking concepts
+- Practical experience with Python socket programming
+- Awareness of secure communication principles
 
