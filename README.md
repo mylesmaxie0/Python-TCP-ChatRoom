@@ -25,6 +25,32 @@ The application follows a traditional TCP client-server model:
 - Each client establishes a TCP connection to the server and securely sends and receives messages.
 - Encryption is applied before transmission and decrypted upon receipt to protect data in transit.
 
+### Usage 
+
+#### Start the Server
+```bash
+python3 server.py
+```
+The server will:
+- Bind to a specified IP address and port
+- Listen for incoming client connections
+- Handle encrypted message distribution between clients
+
+
+#### Start a Client
+```bash
+python3 client.py
+```
+When prompted:
+- Enter the server’s IP address and port
+- Choose a username (if supported)
+
+Chat Functionality
+- Messages typed by a client are encrypted before being sent
+- The server relays messages to connected clients
+- Received messages are decrypted and displayed in the terminal
+
+
 ### Learning Outcomes
 
 This project demonstrates:
