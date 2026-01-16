@@ -1,4 +1,4 @@
-# Encrypted TCP Chat Room (Python)
+# Encrypted TCP Chat Room 
 
 ## Overview
 
@@ -101,7 +101,13 @@ If message encryption is temporarily disabled in the code:
   * Follow → TCP Stream
 * This demonstrates how TCP traffic is readable by any intermediary on the network.
 
-#### Unencrypted Traffic
+#### Unencrypted Traffic Chat
+<img width="852" height="709" alt="Screenshot 2026-01-16 at 12 55 57 PM" src="https://github.com/user-attachments/assets/e1f82da8-68b8-462f-abe1-82529e26b0f4" />
+
+#### Wireshark Capture of Chat
+- Server (9999) -> Client (52094)
+<img width="1728" height="1117" alt="Screenshot 2026-01-16 at 1 09 32 PM" src="https://github.com/user-attachments/assets/dd7880de-3879-4c5b-a734-e37fc53db4bc" />
+
 
 ### Encrypted Traffic Observation
 
@@ -111,8 +117,13 @@ With RSA encryption enabled:
 * Message contents are no longer human-readable.
 * Following the TCP stream shows encrypted ciphertext rather than plaintext messages.
 
+#### Encrypted Traffic Chat
+<img width="858" height="750" alt="Screenshot 2026-01-16 at 1 17 23 PM" src="https://github.com/user-attachments/assets/d4dd1687-c579-4c47-9cbd-d52d503775d2" />
 
-#### Encrypted Traffic
+#### Wireshark Capture of Chat
+- Client (52186) -> Server (9999)
+<img width="1728" height="1086" alt="Screenshot 2026-01-16 at 1 15 49 PM" src="https://github.com/user-attachments/assets/a2e25808-af2a-4d57-bedb-dd56d5ca5dba" />
+
 
 ### Key Takeaways
 
@@ -122,19 +133,8 @@ With RSA encryption enabled:
 
 This section reinforces fundamental networking and security concepts, including **packet inspection**, **payload analysis**, and **encryption effectiveness**.
 
-## Possible Improvements
-
-* Use hybrid encryption (RSA + AES)
-* Add message signing for authenticity
-* Support multiple clients
-* Implement dynamic IP/port configuration
-* Add exception handling and clean disconnects
-* Replace blocking sockets with async I/O
-
 ## Disclaimer
 
 This project is intended for **learning and experimentation only**. Do not use it for sensitive or real-world secure communications.
 
-## License
 
-MIT License (or specify your preferred license)
